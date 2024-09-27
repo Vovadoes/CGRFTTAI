@@ -16,7 +16,7 @@ class Calculation:
         self.h = h
 
     def f1(self):
-        self.r = (((1 + self.n * self.i / 100) * pow(1 + self.i / 100, self.n)) - 1) / self.n
+        self.r = 100 * (((1 + self.n * self.i / 100) * pow(1 + self.i / 100, self.n)) - 1) / self.n
 
     def f2(self):
         self.r = self.h + self.i + self.i * self.h / 100
